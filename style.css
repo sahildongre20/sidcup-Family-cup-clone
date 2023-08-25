@@ -36,9 +36,10 @@ body::-webkit-scrollbar-thumb{
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background-color: #95C11E;
+    background-color: #aee025;
     position: fixed;
     z-index: 9  ;
+    transition: 1s ease;
     filter: blur(150px);
 }
 #nav{
