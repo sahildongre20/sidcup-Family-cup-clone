@@ -243,6 +243,7 @@ video{
     background-position: center;
     /* background-color: antiquewhite; */
     transition: all ease 0.6s;
+    overflow: hidden;
 
 }
 #card1 {
@@ -283,6 +284,11 @@ video{
 }
 .card .content:hover{
     opacity: 1;
+}
+
+.card #right-arrow:hover{
+    scale: 1.2;
+    background-color: #fff;
 }
 /* .card:hover{
     transform: rotate3d(1,-1,0,20deg);
@@ -365,7 +371,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     background-color: #95C11E;
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
     justify-content: center;
     color: #000;
     transition: all ease 0.5s;
@@ -392,9 +398,10 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     color: #95C11E;
 }
 #page4 h1{
-    font-size: 105px;
+    font-size: 85px;
     position: absolute;
-    top: -15%;
+    top: -18%;
+    left: 100PX;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color:#000;
@@ -403,7 +410,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
 
 #footer{
     height: 40vh;
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     background: rgb(176,228,35);
     background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51%, rgba(176,228,35,1) 87%);
@@ -459,3 +466,22 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     width: 20%;
     margin-bottom: 8px;
   }
+
+#right-arrow{
+    height: 120px;
+    width: 120px;
+    border: #000 3px solid;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8%;
+    right: -8%;
+    transition: all ease 0.3s;
+}
+#right-arrow i{
+    font-size: 40px;
+    color: #000;
+    
+}
