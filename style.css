@@ -91,7 +91,7 @@ video{
     z-index: 10;
 }
 #page1 h1{
-    font-size: 140px;
+    font-size: 120px;
     font-weight: 900;
     position: relative;
 }
@@ -117,8 +117,8 @@ video{
     width: 40%;
 }
 #arrow{
-    height: 225px;
-    width: 225px;
+    height: 150px;
+    width: 150px;
     border-radius: 150px;
     background-color: transparent;
     position: absolute;
@@ -268,14 +268,14 @@ video{
 
 .content h4{
     color: #111;
-    font-size: 50px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 .content p{
     color: #111;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .content-line{
