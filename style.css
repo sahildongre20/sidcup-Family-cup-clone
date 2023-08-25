@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb{
      background-color: #95C11E;
      position: fixed;
      z-index: 99;
+     transition: none;
 }
 #cursor-blur{
     height: 400px;
@@ -39,7 +40,7 @@ body::-webkit-scrollbar-thumb{
     background-color: #aee025;
     position: fixed;
     z-index: 9  ;
-    transition: 1s ease;
+    transition: 0.7s ease;
     filter: blur(150px);
 }
 #nav{
@@ -337,6 +338,8 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     font-size: 30px;
     text-align: center;
     line-height: 40px;
+    position: relative;
+    z-index: 10;
 }
 
 #page3 img{

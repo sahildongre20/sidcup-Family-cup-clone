@@ -15,6 +15,7 @@ navh4.forEach(function(elem){
         cursor.style.scale=3
         cursor.style.border = "1px solid white"
         cursor.style.backgroundColor = "transparent"
+        cursor.style.transition = "all ease 0.2s";
         
     })
     elem.addEventListener("mouseleave",function(){
