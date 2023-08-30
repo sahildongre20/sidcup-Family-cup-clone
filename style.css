@@ -56,7 +56,11 @@ body::-webkit-scrollbar-thumb{
     z-index: 99;
     
 }
-
+#menu{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+}
 #nav img{
     height: 75px; 
 }
@@ -67,6 +71,62 @@ body::-webkit-scrollbar-thumb{
 }
 #nav h4:hover{
 color: #95C11E;
+}
+
+#nav i{
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+    position: absolute;
+    left: 90%;
+}
+
+@media (max-width:1000px) {
+ 
+    #nav{
+        background-color: #000;
+        height: 7%;
+    }
+ 
+    #nav i{
+        display: block;
+        color: #fff;
+    }
+    #about-us{
+        flex-direction: column;
+        width: 100vw;
+        background-color: #dadada;
+
+    }
+    #about-us h3{
+        font-size: 3vmax;
+        padding-top: 3vmax;
+    }   
+    #about-us-in p{
+        font-size: 300%;
+        color: #000;
+    }
+    #menu{
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        padding: 30px;
+        top: 110px;
+        left: 0;
+        overflow: hidden;
+    }
+    #menu.active{
+        transition: all linear 5s;
+        display: flex;
+    }
+    #nav img{
+        height: 50px;
+        position: absolute;
+        left: 10%;
+    }
+    
 }
 video{
     width: 100%;
@@ -93,7 +153,7 @@ video{
     z-index: 10;
 }
 #page1 h1{
-    font-size: 120px;
+    font-size: 8vmax;
     font-weight: 900;
     position: relative;
 }
@@ -108,13 +168,13 @@ video{
     z-index: -1;
 }
 #page1 h2{
-    font-size: 30px;
+    font-size: 3vmax;
     font-weight: 800;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 #page1 p{
-    font-size: 20px;
+    font-size: 1.3vmax;
     font-weight: 400;
     width: 40%;
 }
@@ -169,7 +229,7 @@ video{
 }
 #scroller h4{
     display: inline-block;
-    font-size: 140px;
+    font-size: 9vmax;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke: 2px #95C11E;
@@ -191,7 +251,7 @@ video{
 }
 
 #about-us{
-    height: 40vh;
+    height: auto;
     margin-top: 70px;
     width: 100%;
     /* background-color: #95C11E; */
@@ -213,15 +273,16 @@ video{
 }
 
 #about-us-in{
+    height: auto;
     width: 50%;
 }
 #about-us-in h3{
-    font-size: 52px;
+    font-size: 4vmax;
     font-weight: 800;
     margin-bottom: 30px;
 }
 #about-us-in p{
-    font-size: 17.7px;
+    font-size: 1.3vmax;
     line-height:40px;
     margin-bottom: 20px;
 }
@@ -234,11 +295,13 @@ video{
     align-items: center;
     gap: 80px;
     position: relative;
+    flex-wrap: wrap;
     z-index: 10;
+    
 }
 .card{
-    height: 82%;
-    width: 25%;
+    height: 420px;
+    width: 320px;
     border-radius: 20px;
     background-size: cover;
     position: relative;
@@ -271,12 +334,12 @@ video{
 
 .content h4{
     color: #111;
-    font-size: 36px;
+    font-size: 2.5vw;
     margin-bottom: 20px;
 }
 .content p{
     color: #111;
-    font-size: 15px;
+    font-size: 0.8vw;
     font-weight: 500;
     line-height: 20px;
 }
@@ -315,7 +378,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     transform: scaleX(-1);
 }
 .green-card h4{
-    font-size: 30px;
+    font-size: 1.9vmax;
     font-weight: 800;
     color: #000;
     width: 45%;
@@ -335,7 +398,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
 #page3>p{
     width: 60%;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 2vmax;
     text-align: center;
     line-height: 40px;
     position: relative;
@@ -360,6 +423,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     align-items: center;
     gap: 70px;
     position: relative;
+    flex-wrap: wrap;
     
 }
 .elem{
@@ -375,7 +439,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     background-color: #95C11E;
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 2vmax;
     justify-content: center;
     color: #000;
     transition: all ease 0.5s;
@@ -402,7 +466,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     color: #95C11E;
 }
 #page4 h1{
-    font-size: 85px;
+    font-size: 5.6vmax;
     position: absolute;
     top: -18%;
     left: 100PX;
@@ -422,7 +486,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    gap: 6.5vw;
+    gap: 6.5vmax;
   padding: 0 100px;
 }
 
@@ -444,7 +508,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
   /* background-color: red; */
 }
 #f2 h4 {
-    font-size: 1.6vw;
+    font-size: 1.6vmax;
     white-space: nowrap;
     text-transform: uppercase;
     color: #000;
@@ -453,7 +517,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
   } 
   
   #f3 h4 {
-    font-size: 1.6vw;
+    font-size: 1.6vmax;
     white-space: nowrap;
     text-transform: uppercase;
     color: #000;
@@ -461,7 +525,7 @@ background: linear-gradient(90deg, rgba(176,228,35,1) 17%, rgba(101,194,45,1) 51
     margin-bottom: 8px;
   }
   #f4 h4 {
-    font-size: 1vw;
+    font-size: 1vmax;
     white-space: nowrap;
     text-transform: uppercase;
     color: #000;

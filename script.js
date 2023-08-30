@@ -8,6 +8,13 @@ document.addEventListener("mousemove", function(dets){
 
 })
 
+var navi = document.querySelector("#nav i");
+var nav = document.querySelector("#menu");
+
+navi.addEventListener('click', () => {
+    nav.classList.toggle("active");
+});
+
 
 var navh4 = document.querySelectorAll("#nav h4")
 navh4.forEach(function(elem){
